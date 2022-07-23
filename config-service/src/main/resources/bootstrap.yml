@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  error:
+    include-message: always
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jarenas98/spring-microservices-poc.git
+          search-paths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t

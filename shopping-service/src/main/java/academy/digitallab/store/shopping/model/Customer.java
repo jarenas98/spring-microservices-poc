@@ -19,7 +19,7 @@ public class Customer {
     private Long id;
 
 
-    private String numberID;
+    private String numberId;
 
     private String firstName;
 
